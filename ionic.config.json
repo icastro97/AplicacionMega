@@ -1,0 +1,7 @@
+{
+  "name": "appMegalabs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
