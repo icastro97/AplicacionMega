@@ -21,10 +21,10 @@ export class LoginPage implements OnInit {
 
   onSubmit() {
     this.loginService.login(this.email, this.password).subscribe(apiData => (this.user = apiData) );
-    this.logged = JSON.parse(localStorage.getItem('user'));
+    this.logged = JSON.parse(localStorage.getItem('user') || '');
     if(this.logged.code === 200)
     {
-      this.router.navigate(['home']);
+      this.router.navigate(['requerimientosCreados']);
     }
     else
     {
