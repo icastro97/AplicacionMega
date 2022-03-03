@@ -24,7 +24,7 @@ export class LoginPage implements OnInit {
     this.logged = JSON.parse(localStorage.getItem('user') || '');
     if(this.logged.code === 200)
     {
-      this.router.navigate(['requerimientosCreados']);
+      this.router.navigate(['home']);
     }
     else
     {
